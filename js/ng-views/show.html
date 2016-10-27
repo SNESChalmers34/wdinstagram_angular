@@ -1,0 +1,15 @@
+<form>
+  <input value="{{post.title}}" data-ng-model="post.title" />
+  <input placeholder="{{post.author}}" data-ng-model="post.author" />
+  <input placeholder="{{post.photo_url}}" data-ng-model="post.photo_url" />
+  <!-- <button type="button" data-ng-click="vm.create()">Create</button> -->
+  <button data-ng-click="destroy()">Delete</button>
+</form>
+
+
+<div>
+  <p>{{post.author}}</p>
+  <img ng-src="{{post.photo_url}}" alt="">
+  <p>{{post.body}}</p>
+
+</div>
